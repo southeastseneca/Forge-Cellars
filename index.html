@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forge Cellars | Burdett, NY – South East Seneca</title>
+  <meta name="description" content="Forge Cellars in Burdett, NY — world-class Dry Riesling and Pinot Noir from 16 vineyard sites along southeast Seneca Lake. Walk-in welcome in The Salon. Reserve the Summer House for a 90-minute guided cellar tasting. Franco-American winemaking partnership." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/southeastseneca/Forge-Cellars-Listing/main/Hero.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Epilogue:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root{--navy:#323d41;--amber:#eeaf70;--slate:#4e6d77;--mauve:#b37565;--white:#ffffff;--cream:#f7f4f0;--ink:#1e2729;--muted:#6b7c80;--border:#dde4e6;--font-head:'Oswald',sans-serif;--font-body:'Epilogue',sans-serif;--max-width:1100px;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:var(--font-body);background:var(--cream);color:var(--ink);line-height:1.7;}
+    .ses-icon{display:inline-flex;align-items:center;justify-content:center;background:var(--amber);border-radius:50%;flex-shrink:0;}
+    .ses-icon svg{display:block;} .ses-icon-sm{width:28px;height:28px;} .ses-icon-sm svg{width:15px;height:15px;} .ses-icon-md{width:38px;height:38px;} .ses-icon-md svg{width:20px;height:20px;}
+    .hero{position:relative;height:560px;background:var(--navy) center/cover no-repeat;background-image:url('Hero.jpeg');background-position:center 35%;display:flex;align-items:flex-end;}
+    .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(50,61,65,0.92) 0%,rgba(50,61,65,0.2) 55%,transparent 100%);}
+    .hero-content{position:relative;z-index:1;max-width:var(--max-width);margin:0 auto;padding:0 2rem 2.75rem;width:100%;}
+    .category-tag{display:inline-flex;align-items:center;gap:0.5rem;background:var(--amber);color:var(--navy);font-family:var(--font-head);font-size:0.7rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;padding:0.3rem 0.85rem 0.3rem 0.5rem;border-radius:2px;margin-bottom:0.65rem;}
+    .category-tag .ses-icon{width:22px;height:22px;background:rgba(50,61,65,0.15);} .category-tag .ses-icon svg{width:12px;height:12px;}
+    .hero h1{font-family:var(--font-head);font-size:clamp(2.2rem,5vw,3.4rem);font-weight:700;color:var(--white);line-height:1.05;letter-spacing:0.02em;text-transform:uppercase;}
+    .hero-tagline{color:rgba(255,255,255,0.82);font-size:1rem;font-weight:300;font-style:italic;margin-top:0.45rem;}
+    .quick-bar{background:var(--navy);border-top:3px solid var(--amber);}
+    .quick-bar-inner{max-width:var(--max-width);margin:0 auto;padding:0 2rem;display:flex;flex-wrap:wrap;}
+    .quick-item{display:flex;align-items:center;gap:0.6rem;padding:0.9rem 1.5rem 0.9rem 0;margin-right:1.5rem;font-size:0.85rem;color:rgba(255,255,255,0.9);border-right:1px solid rgba(255,255,255,0.12);}
+    .quick-item:last-child{border-right:none;} .quick-item strong{font-weight:600;color:var(--white);}
+    .main-wrapper{max-width:var(--max-width);margin:0 auto;padding:3rem 2rem;display:grid;grid-template-columns:1fr 320px;gap:3rem;align-items:start;}
+    section{margin-bottom:2.75rem;}
+    .section-label{font-family:var(--font-head);font-size:0.68rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--slate);margin-bottom:0.35rem;display:flex;align-items:center;gap:0.4rem;}
+    .section-label::after{content:'';display:inline-block;width:24px;height:1px;background:var(--slate);opacity:0.5;}
+    .section-title{font-family:var(--font-head);font-size:1.75rem;font-weight:600;color:var(--navy);margin-bottom:0.85rem;letter-spacing:0.02em;text-transform:uppercase;border-bottom:2px solid var(--amber);padding-bottom:0.5rem;display:inline-block;}
+    p{margin-bottom:1rem;color:#3a4f54;font-size:0.95rem;}
+    .story-section{background:var(--navy);border-radius:8px;padding:2rem 2.25rem;margin-bottom:2.75rem;position:relative;overflow:hidden;}
+    .story-section::before{content:'\201C';position:absolute;top:0.5rem;right:1.5rem;font-size:7rem;color:rgba(238,175,112,0.1);line-height:1;font-family:Georgia,serif;pointer-events:none;}
+    .story-label{font-family:var(--font-head);font-size:0.68rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--amber);margin-bottom:0.5rem;display:flex;align-items:center;gap:0.6rem;}
+    .story-title{font-family:var(--font-head);font-size:1.4rem;font-weight:600;color:var(--white);text-transform:uppercase;letter-spacing:0.03em;margin-bottom:1.1rem;}
+    .story-body{font-size:0.97rem;font-style:italic;font-weight:300;line-height:1.85;border-left:3px solid var(--amber);padding-left:1.25rem;}
+    .story-body p{color:rgba(255,255,255,0.82);margin-bottom:0.85rem;} .story-body p:last-child{margin-bottom:0;}
+    .story-attribution{margin-top:1.1rem;padding-top:0.85rem;border-top:1px solid rgba(255,255,255,0.1);font-size:0.82rem;color:var(--amber);font-weight:500;font-style:normal;display:flex;align-items:center;gap:0.6rem;}
+    .highlights{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:1rem;margin-top:0.85rem;}
+    .highlight-card{background:var(--white);border:1px solid var(--border);border-top:3px solid var(--amber);padding:1.1rem 1.15rem;border-radius:4px;}
+    .highlight-card h4{font-family:var(--font-head);font-size:0.88rem;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;margin:0.65rem 0 0.3rem;color:var(--navy);}
+    .highlight-card p{font-size:0.82rem;color:var(--muted);margin:0;}
+    .wine-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-top:0.75rem;}
+    .wine-list li{background:var(--white);border:1px solid var(--border);border-left:4px solid var(--slate);padding:0.7rem 1rem;border-radius:3px;font-size:0.88rem;}
+    .wine-list li strong{display:block;color:var(--navy);font-family:var(--font-head);letter-spacing:0.03em;font-size:0.92rem;margin-bottom:0.1rem;}
+    .wine-list li span{color:var(--muted);font-size:0.8rem;}
+    .tasting-options{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:0.85rem;}
+    .tasting-card{border-radius:6px;padding:1.5rem;overflow:hidden;}
+    .tasting-card-walk{background:var(--cream);border:2px solid var(--amber);}
+    .tasting-card-res{background:var(--navy);}
+    .tasting-card h4{font-family:var(--font-head);font-size:1rem;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.5rem;}
+    .tasting-card-walk h4{color:var(--navy);}
+    .tasting-card-res h4{color:var(--amber);}
+    .tasting-card p{font-size:0.85rem;margin-bottom:0.75rem;line-height:1.7;}
+    .tasting-card-walk p{color:#3a4f54;}
+    .tasting-card-res p{color:rgba(255,255,255,0.75);}
+    .tasting-card .price{font-family:var(--font-head);font-size:1rem;font-weight:700;}
+    .tasting-card-walk .price{color:var(--navy);}
+    .tasting-card-res .price{color:var(--amber);}
+    .note-badge{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(238,175,112,0.12);border:1px solid rgba(238,175,112,0.4);color:#7a5a30;font-size:0.78rem;padding:0.35rem 0.7rem;border-radius:3px;margin-top:0.75rem;}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem;margin-top:0.75rem;}
+    .gallery-item{overflow:hidden;border-radius:4px;}
+    .gallery-item img{width:100%;height:165px;object-fit:cover;display:block;transition:transform 0.3s ease;}
+    .gallery-item:hover img{transform:scale(1.04);}
+    .tips-list{list-style:none;margin-top:0.75rem;}
+    .tips-list li{display:flex;gap:0.75rem;margin-bottom:0.7rem;font-size:0.92rem;color:#3a4f54;align-items:flex-start;}
+    .sidebar{position:sticky;top:2rem;}
+    .sidebar-card{background:var(--white);border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-bottom:1.5rem;box-shadow:0 1px 4px rgba(50,61,65,0.07);}
+    .sidebar-card-header{background:var(--navy);color:var(--white);padding:0.75rem 1.15rem;font-family:var(--font-head);font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;display:flex;align-items:center;gap:0.6rem;}
+    .sidebar-card-body{padding:1.15rem;}
+    .info-row{display:flex;gap:0.65rem;margin-bottom:0.9rem;font-size:0.88rem;align-items:flex-start;} .info-row:last-child{margin-bottom:0;}
+    .info-row .label{font-family:var(--font-head);font-weight:600;display:block;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.15rem;}
+    .info-row a{color:var(--slate);text-decoration:none;font-weight:500;}
+    .divider{border:none;border-top:1px solid var(--border);margin:1rem 0;}
+    .hours-sub-head{font-family:var(--font-head);font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin:0.85rem 0 0.4rem;display:block;}
+    .hours-table{width:100%;font-size:0.83rem;border-collapse:collapse;}
+    .hours-table tr td{padding:0.3rem 0;} .hours-table tr td:first-child{color:var(--muted);}
+    .hours-table tr td:last-child{text-align:right;font-weight:600;color:var(--navy);}
+    .hours-table .closed{color:var(--muted);font-style:italic;font-weight:400;}
+    .cta-btn{display:flex;align-items:center;justify-content:center;gap:0.6rem;background:var(--amber);color:var(--navy);font-family:var(--font-head);font-weight:700;font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.8rem 1rem;border-radius:4px;text-decoration:none;margin-top:1rem;transition:background 0.2s;}
+    .cta-btn:hover{background:#e09e58;}
+    .social-links{display:flex;gap:0.5rem;margin-top:0.75rem;}
+    .social-links a{flex:1;text-align:center;background:var(--cream);border:1px solid var(--border);border-radius:4px;padding:0.5rem;font-family:var(--font-head);font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;color:var(--navy);text-decoration:none;display:flex;align-items:center;justify-content:center;gap:0.4rem;}
+    .social-links a:hover{background:var(--border);}
+    .map-wrap iframe{width:100%;height:185px;border:none;display:block;}
+    .map-note{padding:0.7rem 1.15rem;font-size:0.8rem;color:var(--muted);display:flex;align-items:center;gap:0.5rem;}
+    .nearby-item{display:flex;gap:0.75rem;margin-bottom:0.8rem;align-items:flex-start;} .nearby-item:last-child{margin-bottom:0;}
+    .nearby-item strong{display:block;font-size:0.88rem;color:var(--navy);font-weight:600;} .nearby-item span{font-size:0.78rem;color:var(--muted);}
+    .keep-exploring{background:var(--cream);padding:3rem 2rem;border-top:3px solid var(--amber);}
+    .keep-exploring-inner{max-width:var(--max-width);margin:0 auto;}
+    .keep-exploring-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.25rem;margin-top:1.5rem;}
+    .ke-card{background:var(--white);border:1px solid var(--border);border-top:3px solid var(--amber);border-radius:6px;text-decoration:none;display:block;overflow:hidden;transition:box-shadow 0.2s;}
+    .ke-card:hover{box-shadow:0 4px 16px rgba(50,61,65,0.12);}
+    .ke-card-dark{background:var(--navy);border-color:var(--navy);}
+    .ke-card-body{padding:1.25rem 1.5rem 1.5rem;}
+    .ke-icon{font-size:1.75rem;margin-bottom:0.75rem;display:block;}
+    .ke-label{font-family:var(--font-head);font-size:0.65rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--slate);margin-bottom:0.4rem;}
+    .ke-card-dark .ke-label{color:var(--amber);}
+    .ke-title{font-family:var(--font-head);font-size:1.05rem;font-weight:600;color:var(--navy);text-transform:uppercase;margin-bottom:0.5rem;}
+    .ke-card-dark .ke-title{color:var(--white);}
+    .ke-desc{font-size:0.83rem;color:var(--muted);line-height:1.6;margin:0;}
+    .ke-card-dark .ke-desc{color:rgba(255,255,255,0.65);}
+    .ke-arrow{margin-top:1rem;font-family:var(--font-head);font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber);}
+    .page-footer{background:#212b2e;color:rgba(255,255,255,0.45);text-align:center;font-size:0.78rem;padding:1.5rem 1rem;}
+    .page-footer strong{color:rgba(255,255,255,0.8);} .page-footer a{color:var(--amber);text-decoration:none;}
+    @media(max-width:768px){
+      .main-wrapper{grid-template-columns:1fr;} .sidebar{position:static;} .wine-list,.tasting-options{grid-template-columns:1fr;}
+      .gallery{grid-template-columns:repeat(2,1fr);} .quick-bar-inner{flex-direction:column;padding:0.75rem 2rem;}
+      .quick-item{border-right:none;border-bottom:1px solid rgba(255,255,255,0.08);padding:0.6rem 0;margin:0;}
+      .quick-item:last-child{border-bottom:none;} .highlights{grid-template-columns:1fr 1fr;}
+    }
+  </style>
+  <svg style="display:none" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="icon-winery" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8l-1.5 7a4 4 0 0 1-5 0L8 3z"/><line x1="12" y1="14" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/></symbol>
+    <symbol id="icon-leaf" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13C4 9 7 5 11 3c0 4 3 7 7 8a7 7 0 0 1-7 9z"/><path d="M11 20L8 13"/></symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="7.05" y2="7.05"/><line x1="16.95" y1="16.95" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="7.05" y2="16.95"/><line x1="16.95" y1="7.05" x2="19.78" y2="4.22"/></symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="icon-dog" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6c0-1.7 1.3-3 3-3h2l1 2h1a1 1 0 0 1 1 1v2l-2 1v2"/><path d="M16 11c0 3-2 6-5 7H8a2 2 0 0 1-2-2v-2l-1-3 2-1 1 2h2l1-1"/><path d="M8 14v4"/><path d="M12 14v4"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15.5,14"/></symbol>
+    <symbol id="icon-car" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11l1.5-4.5h11L19 11"/><rect x="3" y="11" width="18" height="7" rx="2"/><circle cx="7.5" cy="18" r="1.5" fill="#1e2729"/><circle cx="16.5" cy="18" r="1.5" fill="#1e2729"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2H7a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9z"/></symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="icon-map" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="3,6 9,3 15,6 21,3 21,18 15,21 9,18 3,21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="#1e2729" stroke="none"/></symbol>
+    <symbol id="icon-compass" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88" fill="#1e2729" stroke="none"/></symbol>
+    <symbol id="icon-pen" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.8 2.8 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></symbol>
+    <symbol id="icon-image" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></symbol>
+    <symbol id="icon-signature" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17c3-2 5-5 7-9s4-6 6-3-2 8-1 10 4-2 6-4"/><line x1="3" y1="21" x2="21" y2="21"/></symbol>
+    <symbol id="icon-hike" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="4" r="2"/><path d="M10 7l-3 5h4l-2 6 5-3"/><path d="M14 16l2 5"/><path d="M9 12l-2 7"/></symbol>
+    <symbol id="icon-clipboard" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4a2 2 0 0 1 4 0"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="13" y2="14"/></symbol>
+    <symbol id="icon-warning" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.3L2 20h20L13.7 3.3a2 2 0 0 0-3.4 0z"/><line x1="12" y1="10" x2="12" y2="14"/><circle cx="12" cy="17" r="0.5" fill="#1e2729"/></symbol>
+  </defs></svg>
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-content">
+      <div class="category-tag"><span class="ses-icon" style="width:22px;height:22px;background:rgba(50,61,65,0.18);"><svg style="width:13px;height:13px;"><use href="#icon-winery"/></svg></span>Winery · South East Seneca</div>
+      <h1>Forge Cellars</h1>
+      <p class="hero-tagline">World-class Dry Riesling &amp; Pinot Noir from 16 vineyard sites — a Franco-American partnership bringing Burgundian precision to Seneca Lake.</p>
+    </div>
+  </div>
+
+  <div class="quick-bar"><div class="quick-bar-inner">
+    <div class="quick-item"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-pin"/></svg></span>Burdett, NY</div>
+    <div class="quick-item"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-clock"/></svg></span>Fri–Sun · The Salon Walk-In</div>
+    <div class="quick-item"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-car"/></svg></span><strong>~6 miles</strong>&nbsp;from Watkins Glen</div>
+    <div class="quick-item"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-winery"/></svg></span>Dry Riesling &amp; Pinot Noir Only</div>
+    <div class="quick-item"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-sun"/></svg></span>The Salon · Walk-In Welcome</div>
+    <div class="quick-item"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-dog"/></svg></span>Dogs Welcome in The Salon</div>
+  </div></div>
+
+  <div class="main-wrapper">
+    <main>
+      <section id="about">
+        <p class="section-label">About</p>
+        <h2 class="section-title">Forge Cellars</h2>
+        <p>Forge Cellars is one of the most serious and celebrated wineries in the Finger Lakes — an artisanal producer founded in 2011 with a singular, uncompromising focus: handcrafted Dry Riesling and Pinot Noir from the southeastern shore of Seneca Lake. The winery is a collaboration between three passionate partners: French winemaker-grower Louis Barruol of Château de Saint Cosme in Gigondas, and Americans Rick Rainey and Justin Boyette.</p>
+        <p>The goal at Forge is to produce wines that speak unmistakably of the place they come from — the glacially carved soils, the cool lakeside climate, and the hillside terroirs of an 8-mile stretch along southeast Seneca Lake. Working with 16 vineyard sites, Forge produces both Classique blends — which consolidate the character of all 16 sites into perfectly balanced expressions — and single-vineyard lieux-dits that explore individual site character.</p>
+        <p>The property offers two distinct tasting experiences. The Summer House hosts reservation-only 90-minute guided tastings with a deep dive into glacial history, terroir, and a walking cellar tour with library pours. The Salon is a more casual, walk-in-welcome indoor/outdoor space with flights, by-the-glass service, artisanal tinned fish, and sweeping views of Bellows Vineyard and Seneca Lake. Dogs welcome in The Salon.</p>
+      </section>
+
+      <div class="story-section">
+        <p class="story-label"><span class="ses-icon" style="width:24px;height:24px;background:rgba(238,175,112,0.2);"><svg style="width:13px;height:13px;"><use href="#icon-pen" style="stroke:var(--amber)"/></svg></span>In Our Words</p>
+        <h3 class="story-title">Our Story</h3>
+        <div class="story-body">
+          <p>Forge Cellars is the kind of winery that reframes what you think the Finger Lakes can produce. The Riesling Classique is electric — mineral, precise, and transportive in a way that serious wine lovers immediately recognize. The Pinot Noirs are some of the most compelling in New York State. And the single-vineyard bottlings reward the kind of attention that the best Burgundies demand.</p>
+          <p>If you have time for the Summer House tasting, book it — the 90-minute guided experience is genuinely educational and the library pour is a special touch. If you're walking in for the afternoon, The Salon is perfect: wood stove, Adirondack chairs on the point overlooking the lake, a flight in hand, and a tin of anchovies if you want to lean fully into the European wine bar experience. Forge is a genuine must-visit.</p>
+        </div>
+        <p class="story-attribution"><span class="ses-icon" style="width:22px;height:22px;background:rgba(238,175,112,0.15);"><svg style="width:12px;height:12px;"><use href="#icon-signature" style="stroke:var(--amber)"/></svg></span>— South East Seneca</p>
+      </div>
+
+      <section id="highlights">
+        <p class="section-label">Why Visit</p>
+        <h2 class="section-title">What to Expect</h2>
+        <div class="highlights">
+          <div class="highlight-card"><span class="ses-icon ses-icon-md"><svg><use href="#icon-winery"/></svg></span><h4>Dry Riesling &amp; Pinot Noir</h4><p>Forge focuses exclusively on two varieties — executed with Burgundian precision across 16 estate and partner vineyard sites.</p></div>
+          <div class="highlight-card"><span class="ses-icon ses-icon-md"><svg><use href="#icon-sun"/></svg></span><h4>The Salon — Walk-In</h4><p>Casual indoor/outdoor space with flights, by-the-glass, Adirondack chairs overlooking Bellows Vineyard and Seneca Lake. Dogs welcome on leash.</p></div>
+          <div class="highlight-card"><span class="ses-icon ses-icon-md"><svg><use href="#icon-users"/></svg></span><h4>Summer House — Guided</h4><p>90-minute reservation tasting with 6 wines, glacial geology deep dive, cellar tour, and a library pour from the vault. $40/person.</p></div>
+          <div class="highlight-card"><span class="ses-icon ses-icon-md"><svg><use href="#icon-leaf"/></svg></span><h4>16 Vineyard Sites</h4><p>Classique blends unify all 16 sites — single-vineyard lieux-dits explore individual site terroir. Compare them for a master class.</p></div>
+          <div class="highlight-card"><span class="ses-icon ses-icon-md"><svg><use href="#icon-winery"/></svg></span><h4>Franco-American Partnership</h4><p>Louis Barruol of Château de Saint Cosme brings old-world precision to Seneca Lake terroir — a truly unique collaboration.</p></div>
+          <div class="highlight-card"><span class="ses-icon ses-icon-md"><svg><use href="#icon-sun"/></svg></span><h4>Artisanal Tinned Fish</h4><p>Conservas available in The Salon — anchovy, sardine, and more. Surprisingly brilliant with bone-dry Riesling.</p></div>
+        </div>
+      </section>
+
+      <section id="tastings">
+        <p class="section-label">Tasting Options</p>
+        <h2 class="section-title">Choose Your Experience</h2>
+        <div class="tasting-options">
+          <div class="tasting-card tasting-card-walk">
+            <h4>🪵 The Salon — Walk-In Welcome</h4>
+            <p>Fri–Sun, no reservation required. Build your own flight, taste by the glass, or just pull up an Adirondack chair and watch the lake. Wood stove in winter, open-air in summer. Dogs welcome on leash. Artisanal tinned fish available.</p>
+            <p class="price">Flight &amp; Glass Pricing — see forgecellars.com</p>
+          </div>
+          <div class="tasting-card tasting-card-res">
+            <h4>🏡 Summer House — Reservation Only</h4>
+            <p>Thu–Sat, 11 AM. 90-minute guided experience with 6 wines, deep dive into glacial history and Seneca Lake terroir, walking cellar tour, and a bonus library pour from the vault. 12 seats per session — books ahead.</p>
+            <p class="price">$40 per person · Book at forgecellars.com</p>
+          </div>
+        </div>
+        <p class="note-badge"><span class="ses-icon" style="width:20px;height:20px;background:rgba(238,175,112,0.3);"><svg style="width:11px;height:11px;"><use href="#icon-warning"/></svg></span>No walk-in tastings outside designated Salon hours. No buses or limos. Large groups email tastings@forgecellars.com.</p>
+      </section>
+
+      <section id="wines">
+        <p class="section-label">The Wines</p>
+        <h2 class="section-title">What's Pouring</h2>
+        <p>Forge produces Dry Riesling and Pinot Noir exclusively — in Classique blends and single-vineyard lieux-dits. Wines sell out fast; join the mailing list or The Foundry club for first access.</p>
+        <ul class="wine-list">
+          <li><strong>Riesling Classique ★</strong><span>The foundation of Forge — all 16 vineyard sites unified into one perfectly balanced, terroir-expressive Riesling</span></li>
+          <li><strong>Pinot Noir Classique ★</strong><span>Cool-climate Burgundian style — silky, precise, and site-expressive in a way that surprises</span></li>
+          <li><strong>Single-Vineyard Rieslings</strong><span>Lieux-dits — individual vineyard expressions revealing the nuance of each site's soils and aspect</span></li>
+          <li><strong>Single-Vineyard Pinot Noirs</strong><span>Limited production site expressions — compare against the Classique for a terroir masterclass</span></li>
+          <li><strong>Château de Saint Cosme</strong><span>Wines from Forge's sister winery in Gigondas — available at The Salon for transatlantic comparison</span></li>
+          <li><strong>Library &amp; Seasonal Releases</strong><span>Available in the Summer House tasting or to Foundry members — sign up at forgecellars.com</span></li>
+        </ul>
+      </section>
+
+      <section id="tips">
+        <p class="section-label">Plan Your Visit</p>
+        <h2 class="section-title">Tips for Visitors</h2>
+        <ul class="tips-list">
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-users"/></svg></span>Book the Summer House if you want the deep experience — 90 minutes, cellar tour, library pour, and real terroir education. $40/person, Thu–Sat 11 AM.</li>
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-sun"/></svg></span>Walk into The Salon on a Friday or Saturday — no reservation needed, flights and by-the-glass, and those Adirondack chairs overlooking Bellows Vineyard are outstanding.</li>
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-winery"/></svg></span>Try the Classique bottling first — it's the best introduction to what Forge is doing, and comparing it to a lieux-dits is genuinely illuminating.</li>
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-leaf"/></svg></span>Order the tinned fish — the anchovy and sardine conservas with bone-dry Riesling is one of the best pairings in the Finger Lakes. Commit to it.</li>
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-dog"/></svg></span>Dogs welcome in The Salon on a leash — well-behaved dogs are good boys and girls at Forge.</li>
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-car"/></svg></span>3775 Mathews Road, Burdett — turn off Route 414 onto Mathews Road, half mile in on the left.</li>
+        </ul>
+      </section>
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-card-header"><span class="ses-icon" style="width:22px;height:22px;"><svg style="width:12px;height:12px;"><use href="#icon-clipboard"/></svg></span>Plan Your Visit</div>
+        <div class="sidebar-card-body">
+          <div class="info-row"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-pin"/></svg></span><div><span class="label">Address</span>3775 Mathews Road<br/>Burdett, NY 14818</div></div>
+          <div class="info-row"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-phone"/></svg></span><div><span class="label">Phone</span><a href="tel:+16076228020">(607) 622-8020</a></div></div>
+          <div class="info-row"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-globe"/></svg></span><div><span class="label">Website</span><a href="https://www.forgecellars.com" target="_blank" rel="noopener">forgecellars.com</a></div></div>
+          <hr class="divider"/>
+          <span class="hours-sub-head">The Salon (Walk-In)</span>
+          <table class="hours-table">
+            <tr><td>Mon – Thu</td><td class="closed">Closed</td></tr>
+            <tr><td>Fri – Sat</td><td>11:30 AM – 6:30 PM</td></tr>
+            <tr><td>Sunday</td><td>12:00 – 5:00 PM</td></tr>
+          </table>
+          <span class="hours-sub-head">Summer House (Reservation)</span>
+          <table class="hours-table">
+            <tr><td>Thu – Sat</td><td>11:00 AM</td></tr>
+            <tr><td>Price</td><td>$40/person</td></tr>
+          </table>
+          <a class="cta-btn" href="https://www.forgecellars.com/tastings" target="_blank" rel="noopener"><span class="ses-icon" style="width:20px;height:20px;background:rgba(50,61,65,0.15);"><svg style="width:11px;height:11px;"><use href="#icon-winery"/></svg></span>Book Summer House</a>
+          <a class="cta-btn" style="background:var(--navy);color:var(--white);margin-top:0.5rem;" href="https://maps.google.com/?q=3775+Mathews+Road+Burdett+NY+14818" target="_blank" rel="noopener"><span class="ses-icon" style="width:20px;height:20px;background:rgba(255,255,255,0.15);"><svg style="width:11px;height:11px;stroke:white;"><use href="#icon-map"/></svg></span>Get Directions</a>
+          <div class="social-links">
+            <a href="https://www.instagram.com/forgecellars/" target="_blank" rel="noopener"><span class="ses-icon" style="width:20px;height:20px;"><svg style="width:11px;height:11px;"><use href="#icon-instagram"/></svg></span>Instagram</a>
+            <a href="https://www.forgecellars.com" target="_blank" rel="noopener"><span class="ses-icon" style="width:20px;height:20px;"><svg style="width:11px;height:11px;"><use href="#icon-globe"/></svg></span>Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card-header"><span class="ses-icon" style="width:22px;height:22px;"><svg style="width:12px;height:12px;"><use href="#icon-pin"/></svg></span>Location</div>
+        <div class="map-wrap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.4!2d-76.8688!3d42.4479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d08cabcdef1234%3A0x1!2s3775+Mathews+Road%2C+Burdett%2C+NY+14818!5e0!3m2!1sen!2sus!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Forge Cellars map"></iframe></div>
+        <div class="map-note"><span class="ses-icon" style="width:20px;height:20px;"><svg style="width:11px;height:11px;"><use href="#icon-map"/></svg></span>Off Mathews Road · ~6 miles north of Watkins Glen, Burdett NY</div>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card-header"><span class="ses-icon" style="width:22px;height:22px;"><svg style="width:12px;height:12px;"><use href="#icon-compass"/></svg></span>Nearby Attractions</div>
+        <div class="sidebar-card-body">
+          <div class="nearby-item"><span class="ses-icon ses-icon-md"><svg><use href="#icon-winery"/></svg></span><div><strong>Atwater Estate Vineyards</strong><span>Just up Route 414 · Vista Bar until 9 PM, Thursday Singer-Songwriter nights</span></div></div>
+          <div class="nearby-item"><span class="ses-icon ses-icon-md"><svg><use href="#icon-winery"/></svg></span><div><strong>Ryan William Vineyard</strong><span>Nearby · Estate wines and The Tasting Barn farm-to-fork restaurant</span></div></div>
+          <div class="nearby-item"><span class="ses-icon ses-icon-md"><svg><use href="#icon-winery"/></svg></span><div><strong>Sawmill Creek Estate</strong><span>Down Route 414 · Seven generations, legendary Seneca Lake vineyard site</span></div></div>
+          <div class="nearby-item"><span class="ses-icon ses-icon-md"><svg><use href="#icon-hike"/></svg></span><div><strong>Watkins Glen State Park</strong><span>~6 miles south · World-famous gorge with 19 waterfalls</span></div></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="keep-exploring">
+    <div class="keep-exploring-inner">
+      <p class="section-label">Keep Exploring</p>
+      <h2 class="section-title">Your Next Stop</h2>
+      <p style="color:#3a4f54;font-size:0.95rem;margin:0.5rem 0 0;">More exceptional wineries just up and down Route 414.</p>
+      <div class="keep-exploring-grid">
+        <a href="https://www.atwatervineyards.com" target="_top" class="ke-card" style="padding:0;overflow:hidden;">
+          <div style="height:160px;overflow:hidden;"><img src="atwater.jpeg" alt="Atwater Estate Vineyards" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;" /></div>
+          <div class="ke-card-body">
+            <div class="ke-label">Winery · Burdett, NY</div>
+            <div class="ke-title">Atwater Estate Vineyards</div>
+            <p class="ke-desc">80 acres, 19 varieties, the Vista Bar open until 9 PM Thursday through Saturday, and the Atwater After Hours SunSET DJ series — the best evening scene on Route 414.</p>
+            <div class="ke-arrow">Visit atwatervineyards.com →</div>
+          </div>
+        </a>
+        <a href="https://hectorwinecompany.com" target="_top" class="ke-card" style="padding:0;overflow:hidden;">
+          <div style="height:160px;overflow:hidden;"><img src="sawmill.jpeg" alt="Sawmill Creek Estate" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block;" /></div>
+          <div class="ke-card-body">
+            <div class="ke-label">Winery · Hector, NY</div>
+            <div class="ke-title">Sawmill Creek Estate</div>
+            <p class="ke-desc">Seven generations of the Hazlitt family farming the legendary Sawmill Creek Vineyards — handcrafted, terroir-driven wines from one of the most storied sites in the Finger Lakes.</p>
+            <div class="ke-arrow">Visit hectorwinecompany.com →</div>
+          </div>
+        </a>
+        <a href="https://ryanwilliam.com" target="_top" class="ke-card" style="padding:0;overflow:hidden;">
+          <div style="height:160px;overflow:hidden;"><img src="ryanwilliam.jpeg" alt="Ryan William Vineyard" style="width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block;" /></div>
+          <div class="ke-card-body">
+            <div class="ke-label">Winery &amp; Restaurant · Burdett, NY</div>
+            <div class="ke-title">Ryan William Vineyard</div>
+            <p class="ke-desc">100% estate wines and USA Today Top 10 Winery Restaurant. The Tasting Barn serves farm-to-fork brunch and lunch alongside exceptional estate wines.</p>
+            <div class="ke-arrow">Visit ryanwilliam.com →</div>
+          </div>
+        </a>
+        <a href="https://southeastseneca.com" target="_top" class="ke-card ke-card-dark">
+          <div class="ke-card-body" style="padding-top:1.75rem;">
+            <span class="ke-icon">🗺️</span>
+            <div class="ke-label">Full Directory</div>
+            <div class="ke-title">South East Seneca</div>
+            <p class="ke-desc">Wineries, breweries, distilleries, restaurants, and experiences across the east shore of Seneca Lake.</p>
+            <div class="ke-arrow">Visit southeastseneca.com →</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <p><strong>Forge Cellars</strong> &nbsp;·&nbsp; 3775 Mathews Road, Burdett, NY 14818 &nbsp;·&nbsp; <a href="tel:+16076228020">(607) 622-8020</a> &nbsp;·&nbsp; Part of <a href="https://southeastseneca.com">South East Seneca</a></p>
+    <p style="margin-top:0.4rem;">© 2026 South East Seneca Lake Tourism. All rights reserved.</p>
+  </footer>
+  <script>function sendHeight(){var h=document.documentElement.scrollHeight||document.body.scrollHeight;window.parent.postMessage({iframeHeight:h},"*");}window.addEventListener("load",sendHeight);window.addEventListener("resize",sendHeight);setTimeout(sendHeight,500);setTimeout(sendHeight,1500);setTimeout(sendHeight,3000);</script>
+</body>
+</html>
